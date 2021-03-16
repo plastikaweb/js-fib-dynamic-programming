@@ -5,7 +5,6 @@ const f = (n, memo = {}) => {
   if (n in memo) return memo[n];
   if (n <= 2) return 1;
   memo[n] = f(n - 1, memo) + f(n - 2, memo);
-  console.log(memo);
   return memo[n];
 };
 
